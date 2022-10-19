@@ -15,11 +15,20 @@
 
 body {
   color: var(--primary-text-color);
-  background: #e5e5e5;
+  background-color: #e5e5e5;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
+
+/* logo */
 
 .logo {
   color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 
 .logo-link {
@@ -34,6 +43,11 @@ body {
 
 .site-nav .link {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -49,6 +63,11 @@ body {
 
 .auth-nav .link {
   color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .auth-nav .link:hover,
@@ -64,19 +83,62 @@ body {
 
 .hero-title {
   color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-button {
   color: var(--white-color);
   background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 /* section */
 
-.section-text {
-  color: var(--secondary-text-color);
+.section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  
 }
 
+.section-text {
+  color: var(--secondary-text-color);
+  font-size: 14px;
+  line-height: 1.71;
+  
+  }
+
+.section-work,
+.section-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.section-names{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  }
+
+  .section-profession{
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.18;
+  }
 /* footer */
 
 .footer {
@@ -86,10 +148,51 @@ body {
 .logo-accent {
   color: var(--white-color);
 }
+.address {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
 .footer-link {
   color: rgba(255, 255, 255, 0.6);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 /* Портфолио */
+.portfolio-button{
+  background-color: #F5F4FA;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  }
 
+  .portfolio-button:hover,
+  .portfolio-button:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+  }
 
+  .portfolio-link{
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+  }
+
+  .portfolio-text{
+    color: var(--secondary-text-color);;
+    font-size: 16px;
+    line-height: 1.87;
+  }
