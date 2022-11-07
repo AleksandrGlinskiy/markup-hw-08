@@ -15,7 +15,7 @@
 
 body {
   color: var(--primary-text-color);
-  background-color: #e5e5e5;
+  background-color: var(--white-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -47,7 +47,7 @@ ul {
   margin-bottom: 0;
 }
 
-img{
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -186,6 +186,7 @@ img{
 }
 
 .section-text {
+  width: 270px;
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -216,6 +217,10 @@ img{
   text-align: center;
 }
 
+.team {
+  background-color: #f5f4fa;
+}
+
 .team-list {
   background-color: var(--white-color);
 }
@@ -230,6 +235,10 @@ img{
 .work-list .item + .item,
 .team-list .item + .item {
   margin-left: 30px;
+}
+
+.team-list .item {
+  width: calc((100% - 90px) / 4);
 }
 
 .section-names {
@@ -326,7 +335,7 @@ img{
   display: flex;
   flex-wrap: wrap;
   border: 1px solid transparent;
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .portfolio-list .item {
@@ -352,8 +361,8 @@ img{
   text-decoration: none;
 }
 
-.portfolio-list .title{
-font-weight: 700;
+.portfolio-list .title {
+  font-weight: 700;
   font-size: 18px;
   text-align: left;
   line-height: 2;
@@ -376,7 +385,7 @@ font-weight: 700;
   padding-top: 20px;
   padding-bottom: 20px;
   border: 1px solid #eeeeee;
-    box-sizing: border-box;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+  box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
