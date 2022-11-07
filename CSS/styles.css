@@ -47,6 +47,12 @@ ul {
   margin-bottom: 0;
 }
 
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -320,7 +326,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid transparent;
-  border-radius: 5px;
+    border-radius: 5px;
 }
 
 .portfolio-list .item {
@@ -329,15 +335,15 @@ ul {
   margin-bottom: 30px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  overflow: hidden;
 }
 
 .portfolio-list .item:nth-child(3n) {
   margin-right: 0;
 }
 
-
-
 .portfolio-link {
+  display: block;
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -346,8 +352,31 @@ ul {
   text-decoration: none;
 }
 
+.portfolio-list .title{
+font-weight: 700;
+  font-size: 18px;
+  text-align: left;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+}
+
 .portfolio-text {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.87;
+}
+
+.card-content {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
