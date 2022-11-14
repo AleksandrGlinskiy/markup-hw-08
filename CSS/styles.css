@@ -112,6 +112,8 @@ img {
 .auth-nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
+ 
 }
 
 .auth-nav .item + .item {
@@ -127,30 +129,20 @@ img {
   text-decoration: none;
 }
 
-.auth-nav .link::before {
+ .auth-nav .mail,
+ .auth-nav .smartphone{
   display: inline-flex;
-  align-items: center;
-  content: "";
-  width: 20px;
-  height: 20px;
   margin-right: 10px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+ 
+    }
 
-.auth-nav .mail::before {
-  background-image: url("../images/envelope\ .svg");
-}
-
-.auth-nav .telephone::before {
-  background-image: url("../images/smartphone.svg");
-}
-
+ 
 .auth-nav .link:hover,
 .auth-nav .link:focus,
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* hero */
@@ -242,29 +234,20 @@ img {
   width: 270px;
 }
 
-.excellence-list .item::before {
-  content: "";
+.excellence__thumb {
+  text-align: center;
+  margin-bottom: 30px;
+  
+  }
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut{
   height: 120px;
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.excellence-list .icon-antenna::before {
-  background-image: url("../images/antenna\ 1.svg");
-}
 
-.excellence-list .icon-clock::before {
-  background-image: url("../images/clock\ 1.svg");
-}
-
-.excellence-list .icon-diagram::before {
-  background-image: url("../images/diagram\ 1.svg");
-}
-
-.excellence-list .icon-astronaut::before {
-  background-image: url("../images/astronaut\ 1.svg");
-}
 .excellence-list .item + .item {
   margin-left: 30px;
 }
@@ -320,6 +303,22 @@ img {
   line-height: 1.18;
 }
 
+/* .team-networks{
+  display: flex;
+    align-items: center;
+    text-align: center;
+}
+.team-networks .link{
+  display: inline-block;
+}
+
+.social-item{
+  display: flex;
+} */
+
+
+
+
 /* section-logo */
 
 .clients-logo {
@@ -336,6 +335,7 @@ img {
   height: 92px;
   border: 1px solid #afb1b8;
 }
+
 
 /* footer */
 
@@ -414,20 +414,20 @@ img {
 }
 
   .footer-social__link--instagram {
-    background-image:url('../images/instagram\ 2.svg')
+    background-image:url('../images/instagram.svg')
    }
 
 .footer-social__link--twitter {
-  background-image: url('../images/twitter\ 1.svg');
+  background-image: url('../images/twitter.svg');
 }
 
 .footer-social__link--facebook{
-  background-image: url('../images/facebook\ 1.svg');
+  background-image: url('../images/facebook.svg');
 
 }
 
 .footer-social__link--linkedin{
-  background-image: url('../images/linkedin\ 1.svg');
+  background-image: url('../images/linkedin.svg');
 }
 
 /* Портфолио */
