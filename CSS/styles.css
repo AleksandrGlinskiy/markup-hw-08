@@ -113,7 +113,6 @@ img {
   display: flex;
   margin-left: auto;
   align-items: center;
- 
 }
 
 .auth-nav .item + .item {
@@ -129,14 +128,12 @@ img {
   text-decoration: none;
 }
 
- .auth-nav .mail,
- .auth-nav .smartphone{
+.auth-nav .mail,
+.auth-nav .smartphone {
   display: inline-flex;
   margin-right: 10px;
- 
-    }
+}
 
- 
 .auth-nav .link:hover,
 .auth-nav .link:focus,
 .footer-link:hover,
@@ -237,16 +234,14 @@ img {
 .excellence__thumb {
   text-align: center;
   margin-bottom: 30px;
-  
-  }
+}
 
 .icon-antenna,
 .icon-clock,
 .icon-diagram,
-.icon-astronaut{
+.icon-astronaut {
   height: 120px;
 }
-
 
 .excellence-list .item + .item {
   margin-left: 30px;
@@ -286,6 +281,9 @@ img {
 
 .team-list .item {
   width: calc((100% - 90px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .section-names {
@@ -301,23 +299,32 @@ img {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 16px;
 }
 
-/* .team-networks{
-  display: flex;
-    align-items: center;
-    text-align: center;
-}
-.team-networks .link{
-  display: inline-block;
+.team-social {
+  display: inline-flex;
+  max-width: 206px;
+  margin-bottom: 30px;
 }
 
-.social-item{
-  display: flex;
-} */
+.team-social__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
 
+.team-social__icon {
+  width: 20px;
+  height: 20px;
+  margin: 12px 12px;
+  fill: #afb1b8;
+}
 
-
+.team-social__icon:hover {
+  fill: var(--white-color);
+}
 
 /* section-logo */
 
@@ -334,8 +341,20 @@ img {
   width: calc((100% - 150px) / 6);
   height: 92px;
   border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
+.clients-icon {
+  width: 170px;
+  height: 60px;
+  fill: #afb1b8;
+}
+
+.clients-icon:hover,
+.clients-item:hover {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+}
 
 /* footer */
 
@@ -383,7 +402,7 @@ img {
 .footer-flex {
   display: flex;
   align-items: baseline;
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .connect {
@@ -401,33 +420,30 @@ img {
   padding-top: 21px;
   padding-bottom: 56px;
 }
-.footer-social__link {
+
+.footer-social__item {
   display: inline-block;
   margin-right: 10px;
+}
+
+.footer-social__link {
+  display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: rgba(255, 255, 255, 10%);
 }
 
-  .footer-social__link--instagram {
-    background-image:url('../images/instagram.svg')
-   }
-
-.footer-social__link--twitter {
-  background-image: url('../images/twitter.svg');
+.footer-social__icon {
+  width: 20px;
+  height: 20px;
+  margin: 12px 12px;
+  fill: var(--white-color);
 }
 
-.footer-social__link--facebook{
-  background-image: url('../images/facebook.svg');
-
-}
-
-.footer-social__link--linkedin{
-  background-image: url('../images/linkedin.svg');
+.footer-social__link:hover,
+.team-social__link:hover {
+  background-color: var(--accent-color);
 }
 
 /* Портфолио */
@@ -452,14 +468,27 @@ img {
   text-align: center;
   cursor: pointer;
   border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  min-width: 73px;
 }
 
 .portfolio-button:hover,
-.portfolio-button:focus,
-.portfolio-link:hover,
-.portfolio-link:focus {
+.portfolio-button:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  color: var(--white-color);
+}
+
+.portfolio-list .item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list {
@@ -499,8 +528,6 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-
-  /* identical to box height, or 200% */
   letter-spacing: 0.06em;
 }
 
