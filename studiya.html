@@ -23,7 +23,7 @@
         <a href="" class="logo">Web<span class="logo-accent">Studio</span></a>
         <nav>
           <ul class="site-nav list">
-            <li class="item">
+            <li class="site-nav__thumb item">
               <a href="./studiya.html" class="link current">Cтудия</a>
             </li>
             <li class="item">
@@ -56,7 +56,12 @@
       <section class="hero">
         <div class="hero-content">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-button">Заказать услугу</button>
+          <button data-modal-open type="button" class="hero-button" >Заказать услугу</button>
+          <div data-modal class="backdrop is-hidden">
+            <div class="modal">
+              <button data-modal-close type="button" class="close-button" ><img src="./images/close-button.svg" alt="кнопка закрыть"></button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -124,26 +129,29 @@
           <h2 class="section-work">Чем мы занимаемся</h2>
 
           <ul class="work-list list">
-            <li class="item">
+            <li class="work-thumb item">
               <img
                 src="./images/writingcode.jpg"
                 alt="Написание кода"
                 width="370"
               />
+              <p class="work-apps">Десктопные приложения</p>
             </li>
-            <li class="item">
+            <li class="work-thumb item">
               <img
                 src="./images/mobiledesign.jpg"
                 alt="Разработка мобильных приложений"
                 width="370"
               />
+              <p class="work-apps">Мобильные приложения</p>
             </li>
-            <li class="item">
+            <li class="work-thumb item">
               <img
                 src="./images/colorgamma.jpg"
                 alt="Цветовая гамма"
                 width="370"
               />
+              <p class="work-apps">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -374,13 +382,13 @@
           <h2 class="section-clients">Постоянные клиенты</h2>
           <ul class="clients-logo list">
             <li class="item clients-item">
-              <a href="" class="link"
+              <a href="" class="clients-link link"
                 ><svg class="clients-icon">
                   <use href="./images/symbol-defs.svg#icon-yaco"></use></svg
               ></a>
             </li>
             <li class="item clients-item">
-              <a href="" class="link"
+              <a href="" class="clients-link link"
                 ><svg class="clients-icon">
                   <use
                     href="./images/symbol-defs.svg#icon-companytag"
@@ -388,13 +396,13 @@
               ></a>
             </li>
             <li class="item clients-item">
-              <a href="" class="link"
+              <a href="" class="clients-link link"
                 ><svg class="clients-icon">
                   <use href="./images/symbol-defs.svg#icon-company"></use></svg
               ></a>
             </li>
             <li class="item clients-item">
-              <a href="" class="link"
+              <a href="" class="clients-link link"
                 ><svg class="clients-icon">
                   <use
                     href="./images/symbol-defs.svg#icon-fosterpeters"
@@ -402,13 +410,13 @@
               ></a>
             </li>
             <li class="item clients-item">
-              <a href="" class="link"
+              <a href="" class="clients-link link"
                 ><svg class="clients-icon">
                   <use href="./images/symbol-defs.svg#icon-brand"></use></svg
               ></a>
             </li>
             <li class="item clients-item">
-              <a href="" class="link"
+              <a href="" class="clients-link link"
                 ><svg class="clients-icon">
                   <use href="./images/symbol-defs.svg#icon-compline"></use></svg
               ></a>
@@ -493,5 +501,6 @@
         <div class="copyright"></div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
