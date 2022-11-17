@@ -233,7 +233,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  translate:-50% -50%;
+  translate: -50% -50%;
 
   width: 528px;
   height: 571px;
@@ -434,19 +434,19 @@ img {
   fill: #afb1b8;
 }
 
-.clients-link{
+.clients-link {
   display: flex;
   height: 92px;
   text-align: center;
   align-items: center;
 }
 
-
 .clients-item:hover {
-    border-color: var(--accent-color);
+  border-color: var(--accent-color);
 }
-.clients-item:hover .clients-icon
-{fill: var(--accent-color);}
+.clients-item:hover .clients-icon {
+  fill: var(--accent-color);
+}
 
 /* footer */
 
