@@ -262,6 +262,84 @@ img {
   cursor: pointer;
 }
 
+.icon-close-button{
+ display: flex;
+ align-content: center;
+}
+
+.form-modal{
+  width: 448px;
+  margin-left: 40px;
+}
+.form-field{
+display: flex;
+flex-direction: column;
+  margin-bottom: 10px;
+  text-align: start;
+
+  position: relative;
+     
+}
+
+.form-field label {
+  margin-bottom: 4px;
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+  
+    color: var(--secondary-text-color);
+}
+
+.form-field input{
+   border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 11px;
+}
+
+.icon{
+  position: absolute;
+  bottom: 11px ;
+  left: 12px;
+}
+
+.form-field input::placeholder{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5)
+}
+
+
+textarea{
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+
+.comment {
+  padding: 12px 16px;
+}
+
+.modal-title{
+  margin-top: 40px;
+  margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    
+  
+    color:var(--primary-text-color);
+}
+
 /* section */
 
 .section {
@@ -567,8 +645,6 @@ img {
   flex-direction: column;
 }
 
-.form-field {
-}
 
 .form-input {
   margin-top: 20px;
@@ -590,6 +666,7 @@ img {
 }
 
 .footer-button {
+  position: relative;
   border-radius: 4px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -608,6 +685,11 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-icon-send{
+  position: absolute;
+  margin-left: 10px;
 }
 
 /* Портфолио */
