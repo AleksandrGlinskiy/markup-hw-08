@@ -53,7 +53,9 @@ img {
   height: auto;
 }
 
-.main-nav {
+/* page-header */
+
+.page-header {
   display: flex;
   align-items: center;
 }
