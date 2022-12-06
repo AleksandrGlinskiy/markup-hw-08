@@ -1,4 +1,4 @@
-.site-nav {
+.auth-nav, .site-nav {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -258,6 +258,31 @@ summary {
   display: list-item;
 }
 
+body {
+  color: #212121;
+  background-color: #ffffff;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .page-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,7 +312,7 @@ summary {
   margin-left: 93px;
 }
 
-.site-nav .item + .item {
+.site-nav__item:last-child {
   margin-left: 50px;
 }
 
@@ -305,10 +330,7 @@ summary {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav__link:hover,
-.site-nav__link:focus,
-.site-nav__link--current,
-.site-nav__link--current::after {
+.site-nav__link:hover, .site-nav__link:focus, .site-nav__link--current, .site-nav__link--current::after {
   color: #2196f3;
 }
 
@@ -329,4 +351,79 @@ summary {
 
 .site-nav__thumb {
   position: relative;
+}
+
+.auth-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
+
+.auth-nav__link {
+  color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auth-nav__mail, .auth-nav__smartphone {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-right: 10px;
+}
+
+.auth-nav__link:hover, .auth-nav__link:focus {
+  color: #2196f3;
+  fill: #2196f3;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/herooverline.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/herooverline.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__content {
+  height: 120px;
+  width: 696px;
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
