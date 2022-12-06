@@ -18,21 +18,254 @@
 }
 
 .hero {
-    &__content{
-  height: 120px;
-  width: 696px;
-}
+  &__content {
+    height: 120px;
+    width: 696px;
+  }
 }
 
-.hero{
-    &__title{
-  margin-top: 0;
-  margin-bottom: 30px;
-  color: $white-color;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
+.hero {
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: $white-color;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
 }
+
+.hero {
+  &__button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    border: 1px solid transparent;
+
+    color: $white-color;
+    background-color: $accent-color;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+  }
+}
+
+.hero {
+  &__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+.hero {
+  &__backdrop--is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.hero {
+  &__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+
+    width: 528px;
+    height: 571px;
+    background: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+}
+
+.hero {
+  &__close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    margin-top: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background-color: $white-color;
+    border: 1px solid #0000001a;
+
+    cursor: pointer;
+  }
+}
+
+.hero {
+  &__icon-close-button {
+    display: flex;
+    align-content: center;
+  }
+}
+
+.hero {
+  &__modal-title {
+    margin-top: 40px;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+    color: $primary-text-color;
+  }
+}
+
+.hero {
+  &__form-modal {
+    width: 448px;
+    margin-left: 40px;
+  }
+}
+
+.hero {
+  &__form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    text-align: start;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+
+    color: $secondary-text-color;
+    position: relative;
+  }
+}
+
+.hero {
+  &__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 11px;
+    padding-left: 42px;
+    margin-top: 4px;
+  }
+}
+
+.hero {
+  &__icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+    fill: rgba(33, 33, 33, 1);
+  }
+}
+
+.hero {
+  &__input::placeholder {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.hero__input:not(:placeholder-shown) + .hero__icon,
+.hero__input:focus + .hero__icon {
+  fill: $accent-color;
+  border-color: $accent-color;
+}
+
+.hero__input:not(:placeholder-shown),
+.hero__input:focus {
+  border-color: $accent-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  border: 1px solid $accent-color;
+}
+
+.hero {
+  &__comment {
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-top: 4px;
+  }
+}
+
+.hero {
+  &__field {
+    display: flex;
+    margin-bottom: 30px;
+    padding-left: 11px;
+    align-items: center;
+  }
+}
+
+.hero {
+  &__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.hero {
+  &__icon-checkbox {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+
+    border: 2px solid #2a2a2a;
+    border-radius: 1px;
+
+    transition: transform 250ms linear;
+  }
+}
+
+.hero {
+  &__checkbox-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+  }
+}
+
+.hero__checkbox:checked + .hero__icon-checkbox {
+  border-color: transparent;
+  background-image: url("../images/icon\ checkbox.svg");
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.hero {
+  &__checkbox-link {
+    color: $accent-color;
+  }
 }

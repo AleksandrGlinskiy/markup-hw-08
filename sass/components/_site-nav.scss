@@ -4,13 +4,12 @@
   margin-left: 93px;
 }
 
-.site-nav {
-  &__item:last-child{
-  margin-left: 50px;
-}
+.site-nav{
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
 }
 
- 
 .site-nav__link {
   display: block;
   padding-top: 32px;

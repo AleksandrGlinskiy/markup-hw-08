@@ -267,6 +267,18 @@ img {
   align-content: center;
 }
 
+.modal-title {
+  margin-top: 40px;
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  color: var(--primary-text-color);
+}
+
 /* Form */
 
 .form-modal {
@@ -389,17 +401,7 @@ textarea {
   color: #757575;
 }
 
-.modal-title {
-  margin-top: 40px;
-  margin-bottom: 12px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
 
-  color: var(--primary-text-color);
-}
 
 /* section */
 

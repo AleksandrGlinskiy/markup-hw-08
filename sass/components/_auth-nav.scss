@@ -5,8 +5,10 @@
   align-items: center;
 }
 
-.auth-nav .item + .item {
-  margin-left: 50px;
+.auth-nav {
+  &__item:last-child {
+    margin-left: 50px;
+  }
 }
 
 .auth-nav__link {
