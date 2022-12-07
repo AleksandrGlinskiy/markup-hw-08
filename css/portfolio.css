@@ -270,6 +270,10 @@ summary {
   text-decoration: none;
 }
 
-.logo-accent {
+.logo--accent {
   color: #000000;
+}
+
+.logo__white {
+  color: #ffffff;
 }/*# sourceMappingURL=portfolio.css.map */

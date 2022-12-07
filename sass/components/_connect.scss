@@ -1,0 +1,53 @@
+.connect {
+  display: flex;
+  flex-direction: column;
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.connect {
+  &__social {
+    @extend %list;
+    padding-top: 21px;
+    padding-bottom: 56px;
+  }
+}
+
+.connect {
+  &__item {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+.connect {
+  &__link {
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 10%);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.connect {
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin: 12px 12px;
+    fill: $white-color;
+  }
+}
+
+.connect {
+  &__link:hover,
+  &__link:focus {
+    background-color: $accent-color;
+  }
+}

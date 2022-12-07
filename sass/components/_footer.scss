@@ -1,0 +1,19 @@
+.footer{
+    @extend %container;
+    color: $white-color;
+  background-color: $footer-bcg-color;
+}
+
+.footer{
+    &__flex{
+        display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+    }
+}
+
+.footer{
+    &__logo{
+        margin-top: 60px;
+    }
+}

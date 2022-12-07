@@ -401,8 +401,6 @@ textarea {
   color: #757575;
 }
 
-
-
 /* section */
 
 .section {
@@ -463,14 +461,6 @@ textarea {
   text-align: center;
 }
 
-.team {
-  background-color: #f5f4fa;
-}
-
-.team-list {
-  background-color: var(--white-color);
-}
-
 /* work */
 
 .work-apps {
@@ -494,26 +484,41 @@ textarea {
   position: relative;
 }
 
-.work-list,
+.work-list {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.work-list .item + .item {
+  margin-left: 30px;
+}
+
+/* team */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  background-color: var(--white-color);
+}
+
 .team-list {
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-.work-list .item + .item,
-.team-list .item + .item,
-.clients-logo .item + .item {
-  margin-left: 30px;
-}
-
-/* team */
-
 .team-list .item {
   width: calc((100% - 90px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .item + .item {
+  margin-left: 30px;
 }
 
 .section-names {
@@ -568,6 +573,10 @@ textarea {
   text-align: center;
 }
 
+.clients-logo .item + .item {
+  margin-left: 30px;
+}
+
 .clients-item {
   display: flex;
   align-items: center;
@@ -579,19 +588,19 @@ textarea {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients-link {
+  display: flex;
+  height: 92px;
+  text-align: center;
+  align-items: center;
+}
+
 .clients-icon {
   width: 170px;
   height: 60px;
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-link {
-  display: flex;
-  height: 92px;
-  text-align: center;
-  align-items: center;
 }
 
 .clients-item:hover,
@@ -608,6 +617,12 @@ textarea {
 .footer {
   color: var(--white-color);
   background-color: #2f303a;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-logo {
@@ -654,12 +669,6 @@ textarea {
   fill: var(--accent-color);
 }
 
-.footer-flex {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
 .connect {
   display: flex;
   flex-direction: column;
@@ -701,9 +710,7 @@ textarea {
 }
 
 .footer-social__link:hover,
-.footer-social__link:focus,
-.team-social__link:hover,
-.team-social__link:focus {
+.footer-social__link:focus {
   background-color: var(--accent-color);
 }
 
