@@ -1,8 +1,8 @@
 .hero {
   @include centeredFlex();
 
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -19,8 +19,8 @@
 
 .hero {
   &__content {
-    height: 120px;
-    width: 696px;
+    height: 84px;
+    width: 360px;
   }
 }
 
@@ -30,8 +30,8 @@
     margin-bottom: 30px;
     color: $white-color;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
@@ -58,7 +58,7 @@
 
 .hero {
   &__backdrop {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -82,8 +82,8 @@
     left: 50%;
     translate: -50% -50%;
 
-    width: 528px;
-    height: 571px;
+    width: 450px;
+    height: 609px;
     background: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -118,11 +118,13 @@
 .hero {
   &__modal-title {
     margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-bottom: 12px;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
 
     color: $primary-text-color;
@@ -131,7 +133,7 @@
 
 .hero {
   &__form-modal {
-    width: 448px;
+    width: 370px;
     margin-left: 40px;
   }
 }

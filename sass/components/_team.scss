@@ -1,6 +1,6 @@
 .team{
       @extend %list;
-   @include centeredFlex();
+  /*  @include centeredFlex(); */
     background-color: $white-color;
 }
 

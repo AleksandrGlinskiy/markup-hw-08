@@ -1,18 +1,20 @@
 .clients {
   @extend %list;
-  @include centeredFlex();
+display: flex;
+flex-wrap: wrap;
+margin: -15px;
 }
 
 .clients {
-  &__item:not(:first-child) {
-    margin-left: 30px;
+  &__item{
+    margin: 15px;
   }
 }
 
 .clients {
   &__item {
-    @include centeredFlex();
-    width: calc((100% - 150px) / 6);
+  
+    width: calc((100% - 4 * 15px) / 2);
     border: 1px solid #afb1b8;
     border-radius: 4px;
 

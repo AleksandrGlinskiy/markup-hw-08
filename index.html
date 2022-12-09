@@ -18,6 +18,23 @@
     <header>
       <div class="container page-header">
         <a href="" class="logo">Web<span class="logo--accent">Studio</span></a>
+
+        <button
+            type="button"
+            class="menu-button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use class="icon-cross" href="./images/symbol-defs(1).svg#icon-close_40px"></use>
+              <use class="icon-menu" href="./images/symbol-defs(1).svg#icon-menu_40px"></use>
+            </svg>
+          </button>
         <nav>
           <ul class="site-nav list">
             <li class="site-nav__thumb site-nav__item">
@@ -239,9 +256,10 @@
 
       <section class="section">
         <div class="container">
-          <h2 class="section__header">Чем мы занимаемся</h2>
+          
 
           <ul class="work">
+            <h2 class="section__header">Чем мы занимаемся</h2>
             <li class="work__thumb">
               <img
                 src="./images/writingcode.jpg"

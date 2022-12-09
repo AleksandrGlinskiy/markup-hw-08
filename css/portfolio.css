@@ -7,10 +7,10 @@
 .footer, .section, .page-header {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
-  /* border: 2px solid tomato; */
+  border: 2px solid tomato;
 }
 
 /*! modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -284,12 +284,8 @@ img {
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /*   display: flex;
+    align-items: center; */
 }
 
 .logo {
@@ -395,14 +391,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section__header {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
 }
@@ -569,15 +565,10 @@ img {
 }
 
 .footer__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  text-align: center;
+  /* display: flex;
+  align-items: baseline;
+  justify-content: space-between; */
 }
 
 .footer__logo {
@@ -675,8 +666,9 @@ img {
 
 .form__input {
   margin-top: 20px;
-  width: 358px;
+  width: 450px;
   height: 50px;
+  margin-bottom: 20px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -700,6 +692,7 @@ img {
   padding-left: 29px;
   padding-right: 62px;
   margin-left: 12px;
+  margin-bottom: 60px;
   min-width: 200px;
   border: 1px solid transparent;
   color: #ffffff;

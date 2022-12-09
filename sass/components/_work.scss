@@ -1,6 +1,7 @@
 .work{
       @extend %list;
     @include centeredFlex();
+    display: none;
 }
 
 .work{
