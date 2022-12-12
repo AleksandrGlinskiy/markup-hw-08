@@ -1,5 +1,6 @@
 .page-header {
-    @extend %container;
-/*   display: flex;
-  align-items: center; */
+  @extend %container;
+  position: relative;
+  display: flex;
+  align-items: center;
 }
