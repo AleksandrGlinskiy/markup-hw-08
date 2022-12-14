@@ -1,22 +1,38 @@
 .excellence {
   @extend %list;
-  
-    @media screen and (min-width: 768px) {
+
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin: 0;
+  }
 }
 
 .excellence {
   &__item {
-      
-  @media screen and (min-width: 768px){
-    margin: 15px;
+    @media screen and (min-width: 768px) {
+      margin: 15px;
       width: calc((100% - 4 * 15px) / 2);
-    
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      width: calc((100% - 6 * 15px) / 4);
+    }
   }
 }
+
+.excellence {
+  &__item:not(:first-child) {
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
+  }
 }
 
 .excellence {
@@ -45,11 +61,5 @@
     color: $secondary-text-color;
     font-size: 14px;
     line-height: 1.71;
-  }
-}
-
-.excellence {
-  &__item:not(:first-child) {
-    margin-bottom: 30px;
   }
 }

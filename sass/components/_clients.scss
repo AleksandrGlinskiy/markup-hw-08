@@ -1,10 +1,14 @@
 .clients {
   @extend %list;
-display: flex;
-flex-wrap: wrap;
-margin: -15px;
-}
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    display: flex;
+  }
+}
 
 .clients {
   &__item {
@@ -15,11 +19,22 @@ margin: -15px;
 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 6 * 15px) / 3);
+    }
 
-    @media screen and (min-width: 768px){
-        width: calc((100% - 6 * 15px) / 3);
-    
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      width: calc((100% - 5 * 30px) / 6);
+    }
   }
+}
+
+.clients {
+  &__item:not(:first-child) {
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
   }
 }
 

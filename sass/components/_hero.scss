@@ -16,7 +16,9 @@
   background-position: center;
   background-size: cover;
 
-  
+  @media screen and(min-width: 1200px) {
+     height: 600px;
+  }
 }
 
 .hero {
@@ -27,8 +29,13 @@
     height: 164px;
     width: 360px;
   }
+
+  @media screen and (min-width: 1200px) {
+    height: 120px;
+    width: 696px;
     }
  
+}
 }
 
 .hero {
@@ -41,7 +48,17 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+
+    @media screen and (min-width: 1200px) {
+    
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+
   }
+  }
+
 }
 
 .hero {
@@ -96,17 +113,27 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    z-index: 1;
+     height: 609px;
     
    
     @media screen and (min-width: 768px) {
       position: absolute;
        top: 50%;
-    left: 50%;
+      left: 50%;
     translate: -50% -50%;
-    max-width: 450px ;
+    max-width: 450px;
     width: 100%;
+   
+    
     }
+
+    
+    @media screen and (min-width: 1200px) {
+       width: 528px;
+      height: 581px;
   }
+}
 }
 
 .hero {
@@ -151,9 +178,9 @@
 
 .hero {
   &__form-modal {
-max-width: 370px ;
-    width: 100%;
     margin-left: 40px;
+    margin-right: 40px;
+    
   }
 }
 
@@ -184,8 +211,8 @@ max-width: 370px ;
     padding: 11px;
     padding-left: 42px;
     margin-top: 4px;
-   width: 100%;
-   max-width: 370px;
+   
+  
     
   }
 }
@@ -277,8 +304,13 @@ max-width: 370px ;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 1.16;
     color: #757575;
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+
+    }
   }
 }
 

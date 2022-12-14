@@ -6,14 +6,23 @@
 
   @media screen and (min-width: 768px) {
     @include centeredFlex();
-
   }
-
 }
 
-.menu {
-  &__item:not(:first-child) {
-    margin-left: 8px;
+@media screen and (max-width: 767px) {
+  .menu {
+    &__item:first-child {
+      margin-right: 8px;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    &__item:not(:first-child) {
+      margin-left: 8px;
+    }
   }
 }
 
@@ -39,7 +48,6 @@
 }
 
 .menu {
-
   &__button:hover,
   &__button:focus {
     background-color: $accent-color;

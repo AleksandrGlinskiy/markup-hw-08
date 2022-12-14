@@ -31,12 +31,13 @@
 }
 
 .menu-container {
-  background-color: $white-color;
+  
   padding: 20px;
   font-size: 20px;
-  z-index: 1;
+  z-index: 2;
 
   @media screen and (max-width: 767px) {
+    background-color: $white-color;
     display: none;
     position: absolute;
     top: 100%;
@@ -53,7 +54,7 @@
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
-    
-    align-items: center;
+   align-items: center;
+    position: relative;
   }
 }

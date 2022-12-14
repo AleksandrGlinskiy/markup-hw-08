@@ -1,25 +1,30 @@
-.footer{
-    @extend %container;
-    color: $white-color;
+.footer {
+  @extend %container;
+  color: $white-color;
   background-color: $footer-bcg-color;
 }
 
-.footer{
-    &__flex{
-        text-align: center;
-       
-        @media screen and (min-width:768px) {
-           display: flex;
-           flex-wrap: wrap;
-           justify-content: space-around;
-           align-items: baseline;
-           align-content: center;
-        }
+.footer {
+  &__flex {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: baseline;
+      align-content: center;
     }
+
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+      justify-content: space-between;
+    }
+  }
 }
 
-.footer{
-    &__logo{
-        margin-top: 60px;
-    }
+.footer {
+  &__logo {
+    margin-top: 60px;
+  }
 }
