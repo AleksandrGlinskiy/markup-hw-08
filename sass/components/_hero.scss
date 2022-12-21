@@ -12,10 +12,10 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("/images/mobile.jpg");
+    url("../images/mobile.jpg");
 
   @media screen and (min-resolution: 2dppx) {
-    background-image: url("/images/mobile2x.jpg");
+    background-image: url("../images/mobile2x.jpg");
   }
   background-repeat: no-repeat;
   background-position: center;
@@ -28,24 +28,24 @@
 
 @media screen and (min-width: 481px) {
   .hero {
-    background-image: url("/images/tablet.jpg");
+    background-image: url("../images/tablet.jpg");
   }
 
   @media screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: url("/images/tablet2x.jpg");
+      background-image: url("../images/tablet2x.jpg");
     }
   }
 }
 
 @media screen and (min-width: 769px) {
   .hero {
-    background-image: url("/images/desktop.jpg");
+    background-image: url("../images/desktop.jpg");
   }
 
   @media screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: url("/images/desktop2x.jpg");
+      background-image: url("../images/desktop2x.jpg");
     }
   }
 }
